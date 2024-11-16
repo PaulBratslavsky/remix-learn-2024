@@ -1,0 +1,32 @@
+.appSideNav {
+  @apply bg-custom-dark-medium 
+    text-white 
+    p-2;
+  ul {
+    @apply flex justify-center md:justify-start flex-row md:flex-col gap-2;
+  }
+}
+
+.appNavLink {
+  @apply w-16 h-16;
+}
+
+.appNavLinkItem {
+  @apply 
+    rounded 
+    overflow-hidden 
+    p-2 
+    bg-custom-dark-light 
+    hover:bg-custom-dark
+    transition-colors 
+    duration-500 
+    ease-in-out;
+}
+
+.active {
+  @apply bg-pink-500 hover:bg-pink-600;
+}
+
+.pending {
+  @apply animate-pulse;
+}
